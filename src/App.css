@@ -1,0 +1,26 @@
+.navBar {
+
+    display: flex;
+    color: yellow;
+    background-color: black;
+}
+
+.menu{
+
+    display: flex;
+    list-style: none;
+   
+
+}
+.menu a{
+    margin: 45px;
+}
+.subMenu {
+
+    list-style: none;
+    
+   
+}
+.subMenu a { margin: 5px;
+}
+

@@ -6,18 +6,18 @@ export default function NavBar (){
 
 
         <>
-<nav>
+<nav class="navBar">
 
 
-<h1> Tienda De Ropa Basic </h1>
+<h1 class="tituloPrinc"> Tienda De Ropa Basic </h1>
 
 
-<ul>  
+<ul class="menu">  
     
     <li><a >Home</a></li>
     <li><a >Novedades</a></li>
-    <li><a >Articulos</a>
-        <ul >
+    <li><a class="articulos">Articulos</a>
+        <ul class="subMenu">
             
             <li><a > Remeras</a></li>
             <li><a > Shorts </a></li>
