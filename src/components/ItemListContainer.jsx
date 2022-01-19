@@ -1,19 +1,23 @@
 import React from "react";
+import ItemCount from "../components/ItemCount";
 
-export default function ItemListContainer(){
+export default function  ItemListContainer (){
 
-     return (  
+  return (
+     
+    <div className="main">
 
-        <>
-        <h2>Productos</h2>
-        <div>Card producto 1</div>
-        <div>Card producto 2</div>
-        <div>Card producto 3</div>
-        <div>Card producto 4</div>
-        <div>Card producto n...</div>
-        </>
+      <h2>{}</h2>
 
+      <div className="itemListContainer">
+
+        <ItemCount stock={5} initial={1} />
 
 
-     )
-}
+      </div>
+
+
+    </div>
+  );
+};
+

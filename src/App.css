@@ -18,9 +18,61 @@
 .subMenu {
 
     list-style: none;
-    
-   
 }
 .subMenu a { margin: 5px;
 }
 
+.contador{
+
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+   
+}
+
+.botonDeMenos{
+    margin-right: 10px;
+    width: 35px;
+    border-radius: 4px;
+  
+}
+
+.botonDeMas{
+    margin-left: 10px;
+    width: 35px;
+    border-radius: 4px;
+
+}
+
+.agregarCarrito{
+    margin-top: 10px;
+    border-radius: 8px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+button{
+    
+    border: none;
+    font: inherit;
+    background-color: rgb(0, 0, 0);
+    color: yellow;
+}
+
+.itemListContainer{
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.main{
+    text-align: center;
+    
+}
