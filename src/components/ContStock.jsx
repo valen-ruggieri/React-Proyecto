@@ -23,9 +23,6 @@ export default function ContStock({tope}) {
 
     
 
-
-
-
   return (
 
     <>

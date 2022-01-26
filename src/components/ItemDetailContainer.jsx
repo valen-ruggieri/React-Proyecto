@@ -41,10 +41,8 @@ export default function ItemDetailContainer() {
       ];
 
 				arrayDeProductos = arrayDeProductos.filter(item => item.id == itemId);
-				
-			let productoIndicado = arrayDeProductos[0];
 
-				setProducto(productoIndicado);
+				setProducto(arrayDeProductos[0]);
 
 
 			

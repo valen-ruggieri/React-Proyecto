@@ -26,7 +26,13 @@ import ContStock from './ContStock';
   
   </>
   :
-  <>Loading....</>
+  <>
+  <section className='itemDetailContainer'>
+  <h2>Loading....</h2>
+  </section>
+  </>
+ 
+
 
   
   }

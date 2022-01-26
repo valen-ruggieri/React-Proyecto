@@ -14,15 +14,16 @@ export default function Item({item})
 
   return(
   <>
+  
 
-   
+  
     <article className='itemList'> 
-   
+    
     
 
-    <img width={"260px"} height={"260px"} className="imgItem" src={item.img}/> 
+    <Link to={`itemDetail/${item.id}`}><img width={"260px"} height={"260px"} className="imgItem" src={item.img}/>  </Link>
      
-    <h3><Link to={`itemDetail/${item.id}`}>{item.nombre}</Link></h3>
+    <h3>{item.nombre}</h3>
     
     <h4>Precio: $ {item.precio} </h4>
     <h4>Stock: {item.stock}u</h4>
@@ -30,7 +31,7 @@ export default function Item({item})
 
     <ContStock tope = {item.stock}/>
     </article>
-  
+   
 
   </>
 

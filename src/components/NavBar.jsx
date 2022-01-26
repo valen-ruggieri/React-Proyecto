@@ -11,14 +11,14 @@ export default function NavBar (){
 <nav className="navBar">
 
 
-<h1 className="tituloPrinc"> Tienda De Ropa Basic </h1>
+<h1 className="tituloPrinc">TIENDA DE ROPA BASIC</h1>
 
 
 <ul className="menu">  
     
     <li><Link to={'/listContainer'} >Home</Link></li>
-    <li><a >Novedades</a></li>
-    <li><a className="articulos">Articulos</a>
+    <li>Novedades</li>
+    <li className="articulos">Articulos
         {/* <ul className="subMenu">
             
             <li><Link to={""}> Remeras</Link></li>
@@ -28,7 +28,7 @@ export default function NavBar (){
             
         </ul>    */}
     </li>
-    <li><a>INGRESAR</a></li>
+    <li>INGRESAR</li>
     
     <CartWidget/>
 

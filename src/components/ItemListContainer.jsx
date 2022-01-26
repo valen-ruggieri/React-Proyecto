@@ -50,9 +50,9 @@ export default function  ItemListContainer (){
   return (
      
     <>
-    <section className="itemListContainer">
+    
     <ItemList llegoLaPromesa = {llegoLaPromesa} arrayDeProductos = {arrayDeProductos} />
-    </section>
+    
     </>
   );
 };
