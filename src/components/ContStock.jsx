@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 
 
-export default function ContStock(tope) {
+export default function ContStock({tope}) {
 
 
     const [cantidad , setCantidad] = useState(0);
@@ -18,7 +18,7 @@ export default function ContStock(tope) {
     
     function restar (){
 
-        if ( cantidad < tope) setCantidad(cantidad - 1);
+        if ( cantidad > 0) setCantidad(cantidad - 1);
     }
 
     
@@ -31,12 +31,12 @@ export default function ContStock(tope) {
     <>
     <br/>
     <br/>
-    <button onClick={()=> restar()}>-</button>
-    {cantidad}
-    <button onClick={()=> sumar()}>+</button>
+    <button className="buttonMasMenos" onClick={()=> restar()}>-</button>
+    <>{cantidad}</>
+    <button className="buttonMasMenos" onClick={()=> sumar()}>+</button>
     <br/>
     <br/>
-    <hr/>
+    
     
     </>
 

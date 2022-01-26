@@ -1,5 +1,6 @@
 import React from "react";
 import CartWidget from "./CartWidget";
+import { Link } from "react-router-dom";
 
 export default function NavBar (){
 
@@ -15,17 +16,17 @@ export default function NavBar (){
 
 <ul className="menu">  
     
-    <li><a >Home</a></li>
+    <li><Link to={'/listContainer'} >Home</Link></li>
     <li><a >Novedades</a></li>
     <li><a className="articulos">Articulos</a>
-        <ul className="subMenu">
+        {/* <ul className="subMenu">
             
-            <li><a > Remeras</a></li>
-            <li><a > Shorts </a></li>
-            <li><a > Buzos </a></li>
-            <li><a > Chombas </a></li>
+            <li><Link to={""}> Remeras</Link></li>
+            <li><Link to={""}> Buzos </Link></li>
+            <li><Link to={""}> Shorts </Link></li>
+            <li><Link to={""}> Chombas </Link></li>
             
-        </ul>   
+        </ul>    */}
     </li>
     <li><a>INGRESAR</a></li>
     
