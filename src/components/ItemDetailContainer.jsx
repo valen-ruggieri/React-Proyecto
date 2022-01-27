@@ -40,7 +40,7 @@ export default function ItemDetailContainer() {
       
       ];
 
-				arrayDeProductos = arrayDeProductos.filter(item => item.id == itemId);
+				arrayDeProductos = arrayDeProductos.filter(item => item.id === itemId);
 
 				setProducto(arrayDeProductos[0]);
 

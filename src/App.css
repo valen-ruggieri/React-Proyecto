@@ -180,3 +180,13 @@ h4{
     position:absolute;
 
 }
+.itemListCategoria{
+    
+    display: flex;
+    flex-wrap: nowrap;
+   
+   
+   
+    background-image: linear-gradient(0deg, rgba(255, 254, 254, 0.987), rgba(226, 226, 226, 0.939));
+
+}
