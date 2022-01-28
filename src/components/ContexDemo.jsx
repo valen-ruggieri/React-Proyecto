@@ -1,17 +1,11 @@
-import React, { createContext } from 'react';
+import React, { createContext } from "react";
 
 export const contexto = createContext();
 
-export default function ContexDemo({children}) {
-    
-
+export default function ContexDemo({ children }) {
   return (
-      <>
-      <contexto.Provider value={{}}>
-
-      {children}
-
-      </contexto.Provider>
-      </>
+    <>
+      <contexto.Provider value={{}}>{children}</contexto.Provider>
+    </>
   );
 }

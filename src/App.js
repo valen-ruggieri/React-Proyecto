@@ -1,35 +1,27 @@
-
-import './App.css';
-import ItemListContainer from './components/ItemListContainer';
-import NavBar from './components/NavBar';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import ItemDetailContainer from './components/ItemDetailContainer';
-import ItemCategoriaContainer from './components/ItemCategoriaContainer';
-
-
+import "./App.css";
+import ItemListContainer from "./components/ItemListContainer";
+import NavBar from "./components/NavBar";
+import { BrowserRouter, Route, Switch } from "react-router-dom";
+import ItemDetailContainer from "./components/ItemDetailContainer";
+import ItemCategoriaContainer from "./components/ItemCategoriaContainer";
 
 function App() {
   return (
-   <BrowserRouter>
+    <BrowserRouter>
+      <NavBar />
 
-   <NavBar />
-
-   <Switch>
-
-    <Route path="/listContainer">
-      <ItemListContainer />
-    </Route>
-    <Route path="/itemDetail/:itemId">
-      <ItemDetailContainer/>
-    </Route>
-    <Route path="/itemCategoria/:categoriaId">
-      <ItemCategoriaContainer/>
-    </Route>
-  
-   </Switch>
-  
-   </BrowserRouter>
-  
+      <Switch>
+        <Route path="/listContainer">
+          <ItemListContainer />
+        </Route>
+        <Route path="/itemDetail/:itemId">
+          <ItemDetailContainer />
+        </Route>
+        <Route path="/itemCategoria/:categoriaId">
+          <ItemCategoriaContainer />
+        </Route>
+      </Switch>
+    </BrowserRouter>
   );
 }
 

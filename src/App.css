@@ -1,192 +1,178 @@
 .navBar {
+  display: inline-block;
 
-    display: inline-block;
-    
-    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.727), rgb(0, 0, 0));
+  background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.727), rgb(0, 0, 0));
 
-    width: 1349px;
-    
+  width: 1349px;
 }
-.tituloPrinc{
-    text-align: center;
-    color: yellow ;
-    
+.tituloPrinc {
+  text-align: center;
+  color: yellow;
 }
 
-.menu{
-
-    display: flex;
-    list-style: none;
-    color: yellow;
-    justify-content: center;
-    margin: 0;
-    background-color: rgba(0, 0, 0, 0.268);
-   
-
+.menu {
+  display: flex;
+  list-style: none;
+  color: yellow;
+  justify-content: center;
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.268);
 }
-.menu li{
-    margin: 0px 25px;
-    background-color: rgba(0, 0, 0, 0.145);
-   
-    padding: 0px 20px;
-  
+.menu li {
+  margin: 0px 25px;
+  background-color: rgba(0, 0, 0, 0.145);
+
+  padding: 0px 20px;
 }
 .subMenu {
-
-    list-style: none;
+  list-style: none;
 }
-.subMenu li { margin: 5px;
-}
-
-.contador{
-
-    width: 300px;
-    border-radius: 20px;
-    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    background-color: yellow;
-   
+.subMenu li {
+  margin: 5px;
 }
 
-.botonDeMenos{
-    margin-right: 10px;
-    width: 35px;
-    border-radius: 4px;
-  
+.contador {
+  width: 300px;
+  border-radius: 20px;
+  box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  background-color: yellow;
 }
 
-.botonDeMas{
-    margin-left: 10px;
-    width: 35px;
-    border-radius: 4px;
-
+.botonDeMenos {
+  margin-right: 10px;
+  width: 35px;
+  border-radius: 4px;
 }
 
-.agregarCarrito{
-    margin-top: 10px;
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.botonDeMas {
+  margin-left: 10px;
+  width: 35px;
+  border-radius: 4px;
 }
 
-button{
-    
-    border: none;
-    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.2), rgba(255, 255, 255, 0.426));
-    
-    color: rgb(0, 0, 0);
-
-    margin: 8px 0px 3px 0px;
-    padding: 8px;
-    border-radius: 10px;
-    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.604);
-}
-h4{
-    margin: 0;
+.agregarCarrito {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
-.buttonMasMenos{
+button {
+  border: none;
+  background-image: linear-gradient(
+    30deg,
+    rgba(0, 0, 0, 0.2),
+    rgba(255, 255, 255, 0.426)
+  );
 
-    
-   
-    background-image: linear-gradient(30deg, rgba(0, 0, 0, 0.309), rgba(255, 255, 255, 0.419));
-    color: rgb(0, 0, 0);
-    margin: 0px 10px;
-    padding: 0px 10px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 20px;
- 
+  color: rgb(0, 0, 0);
 
-
-
+  margin: 8px 0px 3px 0px;
+  padding: 8px;
+  border-radius: 10px;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.604);
+}
+h4 {
+  margin: 0;
 }
 
-.itemListContainer{
- 
-
-
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    height: 3000px;
-   
-    background-image: linear-gradient(0deg, rgba(255, 254, 254, 0.987), rgba(226, 226, 226, 0.939));
-    
+.buttonMasMenos {
+  background-image: linear-gradient(
+    30deg,
+    rgba(0, 0, 0, 0.309),
+    rgba(255, 255, 255, 0.419)
+  );
+  color: rgb(0, 0, 0);
+  margin: 0px 10px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
 }
 
-.main{
-    text-align: center;
-    
+.itemListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 3000px;
+
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 254, 254, 0.987),
+    rgba(226, 226, 226, 0.939)
+  );
+}
+
+.main {
+  text-align: center;
 }
 
 .itemDetailContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   
-    
-    background-image: linear-gradient(0deg, rgba(255, 254, 254, 0.987), rgba(226, 226, 226, 0.939));
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-    height: 600px;
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 254, 254, 0.987),
+    rgba(226, 226, 226, 0.939)
+  );
+
+  height: 600px;
 }
 
-
-.itemDetail{
-    background-image: linear-gradient(30deg, rgba(194, 194, 194, 0.2), rgba(255, 255, 255, 0.186));
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
-    border-radius: 20px;
-   width: 300px;
-   height: 300px;
-    text-align: center;
-    margin: 20px;
-    
+.itemDetail {
+  background-image: linear-gradient(
+    30deg,
+    rgba(194, 194, 194, 0.2),
+    rgba(255, 255, 255, 0.186)
+  );
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
+  border-radius: 20px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+  margin: 20px;
 }
 .imgItemDetail {
-    width: 280px;
-    height: 280px;
-    border-radius: 10px;
-    margin: 12px;
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
-    
-
+  width: 280px;
+  height: 280px;
+  border-radius: 10px;
+  margin: 12px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
 }
 
-
 .itemList {
-    background-image: linear-gradient(30deg, rgba(194, 194, 194, 0.2), rgba(255, 255, 255, 0.186));
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
-    border-radius: 20px;
-   width: 260px;
-    text-align: center;
-    margin: 20px;
-    
-
-
-
-
+  background-image: linear-gradient(
+    30deg,
+    rgba(194, 194, 194, 0.2),
+    rgba(255, 255, 255, 0.186)
+  );
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
+  border-radius: 20px;
+  width: 260px;
+  text-align: center;
+  margin: 20px;
 }
 
 .imgItem {
-
-    border-radius: 10px;
-    border: 1px solid rgba(94, 94, 94, 0.392);
+  border-radius: 10px;
+  border: 1px solid rgba(94, 94, 94, 0.392);
 }
 .loading {
-    
-    position:absolute;
-
+  position: absolute;
 }
-.itemListCategoria{
-    
-    display: flex;
-    flex-wrap: nowrap;
-   
-   
-   
-    background-image: linear-gradient(0deg, rgba(255, 254, 254, 0.987), rgba(226, 226, 226, 0.939));
+.itemListCategoria {
+  display: flex;
+  flex-wrap: nowrap;
 
+  background-image: linear-gradient(
+    0deg,
+    rgba(255, 254, 254, 0.987),
+    rgba(226, 226, 226, 0.939)
+  );
 }
