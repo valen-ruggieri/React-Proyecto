@@ -2,7 +2,7 @@ import React from 'react';
 import ContStock from './ContStock';
 import { Link } from 'react-router-dom';
 
-export default function categoriaListaCategoria(categoriaLista) {
+export default function categoriaListaCategoria({categoriaLista, key}) {
 
 
 console.log(categoriaLista)
@@ -14,7 +14,7 @@ console.log(categoriaLista)
     
         <article className='itemList'> 
         
-        <Link to={`itemDetail/${categoriaLista.id}`}><img width={"260px"} height={"260px"} className="imgItem" src={categoriaLista.img}/>  </Link>
+        <Link to={`/itemDetail/${categoriaLista.id}`}><img width={"260px"} height={"260px"} className="imgItem" src={categoriaLista.img}/>  </Link>
         
         <h3>{categoriaLista.nombre}</h3>
         

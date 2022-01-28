@@ -13,6 +13,7 @@ export default function ItemCategoriaContainer() {
 
     useEffect (()=>{
 
+
         setTimeout (()=>{
 
             let productos = [
@@ -60,8 +61,8 @@ export default function ItemCategoriaContainer() {
 
 
 <section className="itemListCategoria">
-        {categoriaLista.map((categoriaLista)=>{
-            return <ItemCategoria categoriaLista = {categoriaLista}/>
+        {categoriaLista.map((categoriaLista, key)=>{
+            return <ItemCategoria categoriaLista = {categoriaLista} key={key}/>
         })}
 </section>
 

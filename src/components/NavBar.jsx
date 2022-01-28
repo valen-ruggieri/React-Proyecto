@@ -20,9 +20,9 @@ export default function NavBar (){
     <li>Novedades</li>
     
     <li><Link to={"/itemCategoria/Remeras"}> Remeras</Link></li>
-    <li><Link to={"itemCategoria/Buzos"}> Buzos </Link></li>
-    <li><Link to={"itemCategoria/Shorts"}> Shorts </Link></li>
-    <li><Link to={"itemCategoria/Chombas"}> Chombas </Link></li>
+    <li><Link to={"/itemCategoria/Buzos"}> Buzos </Link></li>
+    <li><Link to={"/itemCategoria/Shorts"}> Shorts </Link></li>
+    <li><Link to={"/itemCategoria/Chombas"}> Chombas </Link></li>
    
     <li>INGRESAR</li>
     
