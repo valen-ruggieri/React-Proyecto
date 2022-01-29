@@ -3,6 +3,12 @@ import ContStock from "./ContStock";
 import { Link } from "react-router-dom";
 
 export default function categoriaListaCategoria({ categoriaLista }) {
+  function onAdd() {
+    alert(
+      `${categoriaLista.nombre} añadida al carrito quedan en stock ${categoriaLista.stock}`
+    );
+  }
+
   return (
     <>
       <article className="itemList">
@@ -12,6 +18,7 @@ export default function categoriaListaCategoria({ categoriaLista }) {
             height={"260px"}
             className="imgItem"
             src={categoriaLista.img}
+            alt={categoriaLista.nombre}
           />{" "}
         </Link>
 
@@ -19,7 +26,7 @@ export default function categoriaListaCategoria({ categoriaLista }) {
 
         <h4>Precio: $ {categoriaLista.precio} </h4>
         <h4>Stock: {categoriaLista.stock}u</h4>
-        <button>Agregar Al Carro</button>
+        <button onClick={() => onAdd()}>Agregar Al Carro</button>
 
         <ContStock tope={categoriaLista.stock} />
       </article>

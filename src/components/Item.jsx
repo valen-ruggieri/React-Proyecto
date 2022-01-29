@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Item({ item }) {
   function onAdd() {
     alert(
-      item.nombre + " añadida al carrito " + "quedan en stock " + item.stock
+      `${item.nombre} añadida al carrito quedan en stock ${item.stock}`
     );
   }
 
@@ -18,6 +18,7 @@ export default function Item({ item }) {
             height={"260px"}
             className="imgItem"
             src={item.img}
+            alt={item.nombre}
           />{" "}
         </Link>
 

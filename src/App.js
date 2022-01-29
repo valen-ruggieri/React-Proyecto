@@ -9,9 +9,8 @@ function App() {
   return (
     <BrowserRouter>
       <NavBar />
-
       <Switch>
-        <Route path="/listContainer">
+        <Route exact path="/listContainer">
           <ItemListContainer />
         </Route>
         <Route path="/itemDetail/:itemId">

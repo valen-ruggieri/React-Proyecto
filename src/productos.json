@@ -5,7 +5,7 @@
     "stock": 60,
     "img": "https://i.ibb.co/Hhqtq0z/remera.jpg",
     "id": "001",
-    "catg": "Remeras"
+    "catg": "1"
   },
   {
     "nombre": "Remera Basic",
@@ -13,7 +13,7 @@
     "stock": 60,
     "img": "https://i.ibb.co/sqkz9j2/remera.jpg",
     "id": "002",
-    "catg": "Remeras"
+    "catg": "1"
   },
   {
     "nombre": "Remera Basic",
@@ -21,7 +21,7 @@
     "stock": 60,
     "img": "https://i.ibb.co/FYPZ36t/remera.jpg",
     "id": "003",
-    "catg": "Remeras"
+    "catg": "1"
   },
   {
     "nombre": "Remera Basic",
@@ -29,7 +29,7 @@
     "stock": 60,
     "img": "https://i.ibb.co/26V036V/remera.jpg",
     "id": "004",
-    "catg": "Remeras"
+    "catg": "1"
   },
 
   {
@@ -38,7 +38,7 @@
     "stock": 30,
     "img": "https://i.ibb.co/p4fVpZZ/Buzo.jpg",
     "id": "005",
-    "catg": "Buzos"
+    "catg": "2"
   },
   {
     "nombre": "Buzo Oversize",
@@ -46,7 +46,7 @@
     "stock": 30,
     "img": "https://i.ibb.co/2ns1n9s/buzo.jpg",
     "id": "006",
-    "catg": "Buzos"
+    "catg": "2"
   },
   {
     "nombre": "Buzo Oversize",
@@ -54,7 +54,7 @@
     "stock": 30,
     "img": "https://i.ibb.co/chHfWFw/buzo.jpg",
     "id": "007",
-    "catg": "Buzos"
+    "catg": "2"
   },
   {
     "nombre": "Buzo Oversize",
@@ -62,7 +62,7 @@
     "stock": 30,
     "img": "https://i.ibb.co/Cs1z4K4/buzo.jpg",
     "id": "008",
-    "catg": "Buzos"
+    "catg": "2"
   },
 
   {
@@ -71,7 +71,7 @@
     "stock": 70,
     "img": "https://i.ibb.co/t28Q7SR/Short.jpg",
     "id": "008",
-    "catg": "Shorts"
+    "catg": "3"
   },
   {
     "nombre": "Short De Baño",
@@ -79,7 +79,7 @@
     "stock": 70,
     "img": "https://i.ibb.co/YbJhfH6/short.jpg",
     "id": "009",
-    "catg": "Shorts"
+    "catg": "3"
   },
   {
     "nombre": "Short De Baño",
@@ -87,7 +87,7 @@
     "stock": 70,
     "img": "https://i.ibb.co/QMSDTkZ/short.jpg",
     "id": "010",
-    "catg": "Shorts"
+    "catg": "3"
   },
   {
     "nombre": "Short De Baño",
@@ -95,7 +95,7 @@
     "stock": 70,
     "img": "https://i.ibb.co/4fdHvLw/short.jpg",
     "id": "011",
-    "catg": "Shorts"
+    "catg": "3"
   },
 
   {
@@ -104,7 +104,7 @@
     "stock": 40,
     "img": "https://i.ibb.co/9ZDdSNV/chomba.jpg",
     "id": "013",
-    "catg": "Chombas"
+    "catg": "4"
   },
   {
     "nombre": "Chomba De Pique",
@@ -112,7 +112,7 @@
     "stock": 40,
     "img": "https://i.ibb.co/xGc2b7G/chomba.jpg",
     "id": "014",
-    "catg": "Chombas"
+    "catg": "4"
   },
   {
     "nombre": "Chomba De Pique",
@@ -120,7 +120,7 @@
     "stock": 40,
     "img": "https://i.ibb.co/9q3qfmC/chomba.jpg",
     "id": "015",
-    "catg": "Chombas"
+    "catg": "4"
   },
   {
     "nombre": "Chomba De Pique",
@@ -128,6 +128,6 @@
     "stock": 40,
     "img": "https://i.ibb.co/StFKvdz/chomba.jpg",
     "id": "016",
-    "catg": "Chombas"
+    "catg": "4"
   }
 ]
