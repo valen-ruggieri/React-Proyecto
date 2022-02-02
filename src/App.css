@@ -176,3 +176,21 @@ h4 {
     rgba(226, 226, 226, 0.939)
   );
 }
+
+.carrito {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+.itemCart{
+  margin: 20px;
+  padding: 15px;
+  background-image: linear-gradient(30deg,rgb(95, 95, 95),rgba(255, 255, 255, 0.186));
+  border-radius: 10px;
+  
+}
+.imgCart {
+  border-radius: 10px;
+}

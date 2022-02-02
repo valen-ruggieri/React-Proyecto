@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-export default function ContStock({ tope }) {
+export default function ContStock({ tope, onAdd}) {
   const [cantidad, setCantidad] = useState(0);
 
   function sumar() {
@@ -13,6 +13,7 @@ export default function ContStock({ tope }) {
 
   return (
     <>
+      <button onClick={() => onAdd(cantidad)}>Agregar Al Carro</button>
       <br />
       <br />
       <button className="buttonMasMenos" onClick={() => restar()}>

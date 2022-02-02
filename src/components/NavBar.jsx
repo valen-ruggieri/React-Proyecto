@@ -2,6 +2,7 @@ import React from "react";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
+
 export default function NavBar() {
   return (
     <>
@@ -29,7 +30,11 @@ export default function NavBar() {
 
           <li>INGRESAR</li>
 
-          <CartWidget />
+          <li>
+            <Link to={"/cart"}> <CartWidget /></Link>
+          </li>
+
+          
         </ul>
       </nav>
     </>

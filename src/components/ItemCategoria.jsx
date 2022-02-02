@@ -1,12 +1,13 @@
-import React from "react";
+import React, { useState } from "react";
 import ContStock from "./ContStock";
 import { Link } from "react-router-dom";
 
-export default function categoriaListaCategoria({ categoriaLista }) {
-  function onAdd() {
-    alert(
-      `${categoriaLista.nombre} añadida al carrito quedan en stock ${categoriaLista.stock}`
-    );
+export default function ItemCategoria({ categoriaLista }) {
+  const [addItem, setAddItem] = useState(false);
+
+  function onAdd(cant) {
+    alert(`${categoriaLista.nombre} añadida al carrito + ${cant}`);
+    setAddItem(true);
   }
 
   return (
@@ -26,9 +27,12 @@ export default function categoriaListaCategoria({ categoriaLista }) {
 
         <h4>Precio: $ {categoriaLista.precio} </h4>
         <h4>Stock: {categoriaLista.stock}u</h4>
-        <button onClick={() => onAdd()}>Agregar Al Carro</button>
 
-        <ContStock tope={categoriaLista.stock} />
+        {addItem ? (
+          <Link to={"/cart"}>Ir al Carrito</Link>
+        ) : (
+          <ContStock tope={categoriaLista.stock} onAdd={onAdd} />
+        )}
       </article>
     </>
   );
