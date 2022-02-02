@@ -2,7 +2,6 @@ import React from "react";
 import CartWidget from "./CartWidget";
 import { Link } from "react-router-dom";
 
-
 export default function NavBar() {
   return (
     <>
@@ -11,30 +10,29 @@ export default function NavBar() {
 
         <ul className="menu">
           <li>
-            <Link to={"/listContainer"}>Home</Link>
+            <Link to={"/listContainer"} style={{textDecoration : "none", color: "inherit"}}>Home</Link>
           </li>
           <li>Novedades</li>
 
           <li>
-            <Link to={"/itemCategoria/1"}> Remeras</Link>
+            <Link to={"/itemCategoria/1"} style={{textDecoration : "none", color: "inherit"}}> Remeras</Link>
           </li>
           <li>
-            <Link to={"/itemCategoria/2"}> Buzos </Link>
+            <Link to={"/itemCategoria/2"} style={{textDecoration : "none", color: "inherit"}}> Buzos </Link>
           </li>
           <li>
-            <Link to={"/itemCategoria/3"}> Shorts </Link>
+            <Link to={"/itemCategoria/3"} style={{textDecoration : "none", color: "inherit"}}> Shorts </Link>
           </li>
           <li>
-            <Link to={"/itemCategoria/4"}> Chombas </Link>
+            <Link to={"/itemCategoria/4"} style={{textDecoration : "none", color: "inherit"}}> Chombas </Link>
           </li>
 
           <li>INGRESAR</li>
 
-          <li>
-            <Link to={"/cart"}> <CartWidget /></Link>
-          </li>
-
-          
+          <Link to={"/cart"} style={{textDecoration : "none", color: "inherit"}}>
+            {" "}
+            <CartWidget />
+          </Link>
         </ul>
       </nav>
     </>

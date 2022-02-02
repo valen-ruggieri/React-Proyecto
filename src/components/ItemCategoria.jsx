@@ -1,12 +1,15 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ContStock from "./ContStock";
 import { Link } from "react-router-dom";
+import { cartContext } from "./Context";
 
 export default function ItemCategoria({ categoriaLista }) {
+  const { addToCart } = useContext(cartContext);
   const [addItem, setAddItem] = useState(false);
 
   function onAdd(cant) {
     alert(`${categoriaLista.nombre} añadida al carrito + ${cant}`);
+    addToCart(categoriaLista, cant);
     setAddItem(true);
   }
 

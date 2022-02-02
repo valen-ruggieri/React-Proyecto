@@ -19,23 +19,40 @@ export default function Context({ children }) {
     return cart.some((element) => element.item.id === id);
   }
 
-  function deleteItemCart(id){
-
-    const cartFilter = cart.filter(element => element.item.id !== id)
+  function deleteItemCart(id) {
+    const cartFilter = cart.filter((element) => element.item.id !== id);
 
     setCart(cartFilter);
-
-
   }
 
-  function clearCart (){
-    setCart([])
+  function clearCart() {
+    setCart([]);
   }
 
-  console.log(cart);
+  function countCartItems() {
+    const count = cart.map((element) => element.cant);
+
+    if (count.length > 0) {
+      const suma = count.reduce((a, b) => {
+        return a + b;
+      });
+
+      return suma;
+    }
+  }
+
   return (
     <>
-      <cartContext.Provider value={{ cart, addToCart, isInCart, deleteItemCart, clearCart}}>
+      <cartContext.Provider
+        value={{
+          cart,
+          addToCart,
+          isInCart,
+          deleteItemCart,
+          clearCart,
+          countCartItems,
+        }}
+      >
         {children}
       </cartContext.Provider>
     </>

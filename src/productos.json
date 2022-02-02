@@ -1,6 +1,6 @@
 [
   {
-    "nombre": "Remera Basic",
+    "nombre": "Remera Basic Gris",
     "precio": 1500,
     "stock": 60,
     "img": "https://i.ibb.co/Hhqtq0z/remera.jpg",
@@ -8,7 +8,7 @@
     "catg": "1"
   },
   {
-    "nombre": "Remera Basic",
+    "nombre": "Remera Basic Negra",
     "precio": 1500,
     "stock": 60,
     "img": "https://i.ibb.co/sqkz9j2/remera.jpg",
@@ -16,7 +16,7 @@
     "catg": "1"
   },
   {
-    "nombre": "Remera Basic",
+    "nombre": "Remera Basic Celeste",
     "precio": 1500,
     "stock": 60,
     "img": "https://i.ibb.co/FYPZ36t/remera.jpg",
@@ -24,7 +24,7 @@
     "catg": "1"
   },
   {
-    "nombre": "Remera Basic",
+    "nombre": "Remera Basic Blanca",
     "precio": 1500,
     "stock": 60,
     "img": "https://i.ibb.co/26V036V/remera.jpg",
@@ -33,7 +33,7 @@
   },
 
   {
-    "nombre": "Buzo Oversize",
+    "nombre": "Buzo Lila",
     "precio": 3000,
     "stock": 30,
     "img": "https://i.ibb.co/p4fVpZZ/Buzo.jpg",
@@ -41,7 +41,7 @@
     "catg": "2"
   },
   {
-    "nombre": "Buzo Oversize",
+    "nombre": "Buzo Amarillo",
     "precio": 3000,
     "stock": 30,
     "img": "https://i.ibb.co/2ns1n9s/buzo.jpg",
@@ -49,7 +49,7 @@
     "catg": "2"
   },
   {
-    "nombre": "Buzo Oversize",
+    "nombre": "Buzo Rosa",
     "precio": 3000,
     "stock": 30,
     "img": "https://i.ibb.co/chHfWFw/buzo.jpg",
@@ -57,7 +57,7 @@
     "catg": "2"
   },
   {
-    "nombre": "Buzo Oversize",
+    "nombre": "Buzo Blanco",
     "precio": 3000,
     "stock": 30,
     "img": "https://i.ibb.co/Cs1z4K4/buzo.jpg",
@@ -66,7 +66,7 @@
   },
 
   {
-    "nombre": "Short De Baño",
+    "nombre": "Short De Baño Rojo",
     "precio": 2000,
     "stock": 70,
     "img": "https://i.ibb.co/t28Q7SR/Short.jpg",
@@ -74,7 +74,7 @@
     "catg": "3"
   },
   {
-    "nombre": "Short De Baño",
+    "nombre": "Short De Baño Azul",
     "precio": 2000,
     "stock": 70,
     "img": "https://i.ibb.co/YbJhfH6/short.jpg",
@@ -82,7 +82,7 @@
     "catg": "3"
   },
   {
-    "nombre": "Short De Baño",
+    "nombre": "Short De Baño Rosa",
     "precio": 2000,
     "stock": 70,
     "img": "https://i.ibb.co/QMSDTkZ/short.jpg",
@@ -90,7 +90,7 @@
     "catg": "3"
   },
   {
-    "nombre": "Short De Baño",
+    "nombre": "Short De Baño Verde",
     "precio": 2000,
     "stock": 70,
     "img": "https://i.ibb.co/4fdHvLw/short.jpg",
@@ -99,7 +99,7 @@
   },
 
   {
-    "nombre": "Chomba De Pique",
+    "nombre": "Chomba Roja",
     "precio": 2500,
     "stock": 40,
     "img": "https://i.ibb.co/9ZDdSNV/chomba.jpg",
@@ -107,7 +107,7 @@
     "catg": "4"
   },
   {
-    "nombre": "Chomba De Pique",
+    "nombre": "Chomba Azul",
     "precio": 2500,
     "stock": 40,
     "img": "https://i.ibb.co/xGc2b7G/chomba.jpg",
@@ -115,7 +115,7 @@
     "catg": "4"
   },
   {
-    "nombre": "Chomba De Pique",
+    "nombre": "Chomba Azul Oscuro",
     "precio": 2500,
     "stock": 40,
     "img": "https://i.ibb.co/9q3qfmC/chomba.jpg",
@@ -123,7 +123,7 @@
     "catg": "4"
   },
   {
-    "nombre": "Chomba De Pique",
+    "nombre": "Chomba Bordo",
     "precio": 2500,
     "stock": 40,
     "img": "https://i.ibb.co/StFKvdz/chomba.jpg",
