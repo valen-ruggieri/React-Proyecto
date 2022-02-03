@@ -2,9 +2,11 @@ import React, { useEffect, useState } from "react";
 import ItemCategoria from "./ItemCategoria";
 import { useParams } from "react-router-dom";
 import productosJson from "../productos.json";
+import Loader from "./Loader";
 
 export default function ItemCategoriaContainer() {
   const { categoriaId } = useParams();
+  const [promise , setPromise] = useState(false);
 
   const [categoriaLista, setCategoriaLista] = useState([]);
 
@@ -15,11 +17,12 @@ export default function ItemCategoriaContainer() {
 
       setCategoriaLista(productos);
     }, 2000);
+   
   }, [categoriaId]);
 
   return (
     <>
-      {categoriaLista ? (
+      {categoriaLista[0] ? (
         <section className="itemListCategoria">
           {categoriaLista.map((categoriaLista, key) => {
             return <ItemCategoria categoriaLista={categoriaLista} key={key} />;
@@ -27,10 +30,7 @@ export default function ItemCategoriaContainer() {
         </section>
       ) : (
         <>
-          <section className="itemDetailContainer">
-            <h2>Loading....</h2>
-            {console.log("grrggfdg")}
-          </section>
+          <Loader/>
         </>
       )}
     </>

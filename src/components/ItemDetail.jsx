@@ -1,4 +1,5 @@
 import React from "react";
+import Loader from "./Loader";
 
 export default function productoDetail({ producto }) {
   return (
@@ -20,9 +21,7 @@ export default function productoDetail({ producto }) {
         </>
       ) : (
         <>
-          <section className="itemDetailContainer">
-            <h2>Loading....</h2>
-          </section>
+          <Loader/>
         </>
       )}
     </>

@@ -1,14 +1,13 @@
 import React from "react";
 import Item from "./Item";
+import Loader from "./Loader";
 
 export default function ItemList({ arrayDeProductos, llegoLaPromesa }) {
   return (
     <>
       {!llegoLaPromesa ? (
         <>
-          <section className="itemDetailContainer">
-            <h2>Loading....</h2>
-          </section>
+          <Loader />
         </>
       ) : (
         <>
