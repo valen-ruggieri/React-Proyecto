@@ -5,15 +5,24 @@ import { cartContext } from "./Context";
 import Loader from "./Loader";
 
 export default function Cart() {
-  const { cart, clearCart, countCartItems } = useContext(cartContext);
+  const { cart, clearCart, countCartItems, totalCart } = useContext(cartContext);
 
   const [promise, setPromise] = useState(false);
+  const [total, setTotal]= useState(0);
+  const [cantidadItems, setCantidadItems] = useState(0);
 
   useEffect(() => {
     setTimeout(() => {
       setPromise(true);
+      
     }, 2000);
-  }, []);
+  });
+
+  useEffect(()=>{
+    
+    setTotal(totalCart());
+      setCantidadItems(countCartItems());
+  })
 
   return (
     <>
@@ -22,7 +31,8 @@ export default function Cart() {
           {cart[0] ? (
             <>
               <section className="carritoContainer">
-                <h1>Tienes {countCartItems()} items en el carrito</h1>
+                <h1>Tienes {cantidadItems} items en el carrito</h1>
+                <h2>El total es: {total}</h2>
                 <button onClick={() => clearCart()}>Vaciar Carrito</button>
               </section>
               <section className="carrito">

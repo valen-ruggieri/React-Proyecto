@@ -23,6 +23,8 @@ export default function Context({ children }) {
     const cartFilter = cart.filter((element) => element.item.id !== id);
 
     setCart(cartFilter);
+    
+   
   }
 
   function clearCart() {
@@ -35,10 +37,21 @@ export default function Context({ children }) {
     if (count.length > 0) {
       const suma = count.reduce((a, b) => {
         return a + b;
-      });
+      },0);
 
       return suma;
     }
+  }
+
+  function totalCart(){
+    const index  = cart.map((element) => element.cant * element.item.precio);
+
+    const totalCartPrice = index.reduce((a,b)=>{
+      return a + b;
+    },0)
+
+    return totalCartPrice;
+
   }
 
   return (
@@ -51,6 +64,7 @@ export default function Context({ children }) {
           deleteItemCart,
           clearCart,
           countCartItems,
+          totalCart
         }}
       >
         {children}

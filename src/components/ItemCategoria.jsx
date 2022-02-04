@@ -4,26 +4,23 @@ import { Link } from "react-router-dom";
 import { cartContext } from "./Context";
 import Loader from "./Loader";
 
-export default function ItemCategoria({ categoriaLista , categoriaId}) {
+export default function ItemCategoria({ categoriaLista, categoriaId }) {
   const { addToCart } = useContext(cartContext);
   const [addItem, setAddItem] = useState(false);
-  const [promise , setPromise] = useState(false);
+  const [promise, setPromise] = useState(false);
 
   function onAdd(cant) {
     alert(`${categoriaLista.nombre} añadida al carrito + ${cant}`);
     addToCart(categoriaLista, cant);
     setAddItem(true);
   }
-  
-useEffect(()=>{
 
-  setTimeout(()=>{
-
-    setPromise(true);
-    console.log("useeffect")
-  },2000);
-},[categoriaId])
-
+  useEffect(() => {
+    setTimeout(() => {
+      setPromise(true);
+      console.log("useeffect");
+    }, 2000);
+  }, [categoriaId]);
 
   return (
     <>
@@ -45,7 +42,14 @@ useEffect(()=>{
           <h4>Stock: {categoriaLista.stock}u</h4>
 
           {addItem ? (
-            <Link to={"/cart"}>Ir al Carrito</Link>
+            <button>
+              <Link
+                to={"/cart"}
+                style={{ textDecoration: "none", color: "inherit" }}
+              >
+                Ir al Carrito
+              </Link>
+            </button>
           ) : (
             <ContStock tope={categoriaLista.stock} onAdd={onAdd} />
           )}

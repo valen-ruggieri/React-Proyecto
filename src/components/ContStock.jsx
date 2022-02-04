@@ -14,8 +14,8 @@ export default function ContStock({ tope, onAdd}) {
   return (
     <>
       <button onClick={() => onAdd(cantidad)}>Agregar Al Carro</button>
-      <br />
-      <br />
+     
+      <span className="containerMasMenos">
       <button className="buttonMasMenos" onClick={() => restar()}>
         -
       </button>
@@ -23,8 +23,9 @@ export default function ContStock({ tope, onAdd}) {
       <button className="buttonMasMenos" onClick={() => sumar()}>
         +
       </button>
-      <br />
-      <br />
+      </span>
+      
+      
     </>
   );
 }

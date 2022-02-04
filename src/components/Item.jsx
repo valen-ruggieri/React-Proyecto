@@ -33,7 +33,14 @@ export default function Item({ item }) {
         <h4>Stock: {item.stock}u</h4>
 
         {added ? (
-          <Link to={"/cart"}>Ir al Carrito</Link>
+          <button>
+            <Link
+              to={"/cart"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Ir al Carrito
+            </Link>
+          </button>
         ) : (
           <ContStock tope={item.stock} onAdd={onAdd} />
         )}
