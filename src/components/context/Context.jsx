@@ -32,14 +32,12 @@ export default function Context({ children }) {
   }
 
   function countCartItems() {
-    const count = cart.map((element) => element.cant);
-
-    if (count.length > 0) {
-      const suma = count.reduce((a, b) => {
-        return a + b;
-      },0);
-
-      return suma;
+  const countCartItems = cart.reduce((total,item)=>{
+    return total + item.cant 
+  },0);
+ 
+    if (countCartItems > 0) {
+      return countCartItems;
     }
   }
 

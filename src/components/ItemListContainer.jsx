@@ -1,35 +1,38 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import productosJson from "../productos.json";
+import { getFirestore } from "../firebase/firebase";
 
-export default function ItemListContainer() {
-  const [llegoLaPromesa, setLlegoLaPromesa] = useState(false);
-  const [arrayDeProductos, setArrayDeProductos] = useState([]);
-
-  const productosEnStock = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve(productosJson);
-    }, 2000);
-  });
+export default function ItemCategoriaContainer({ categoriaId }) {
+  const [items, setItems] = useState([]);
 
   useEffect(() => {
-    productosEnStock
-      .then((res) => {
-        setLlegoLaPromesa(true);
-        setArrayDeProductos(res);
-      })
+    const dataBase = getFirestore();
+    const itemCollection = dataBase
+      .collection("items")
+      .where("categoria", "==", categoriaId);
 
+    itemCollection
+      .get()
+      .then((collection) => {
+        if (collection === 0) {
+          console.log("no hay documentos en esta coleccion");
+          return;
+        }
+
+        console.log("Hay documentos");
+
+        setItems(collection.docs.map((doc) => doc.data()));
+      })
       .catch((err) => {
         console.log(err);
       });
-  });
+  }, [categoriaId]);
 
   return (
     <>
-      <ItemList
-        llegoLaPromesa={llegoLaPromesa}
-        arrayDeProductos={arrayDeProductos}
-      />
+      <section className="itemListCategoria">
+        <ItemList items={items} />
+      </section>
     </>
   );
 }

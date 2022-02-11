@@ -184,7 +184,7 @@ margin: 4px 0px;
   position: absolute;
 }
 .itemListCategoria {
-  padding-top: 200px;
+  padding-top: 10px;
   display: flex;
   flex-wrap: nowrap;
 
@@ -193,6 +193,19 @@ margin: 4px 0px;
     rgba(255, 254, 254, 0.987),
     rgba(226, 226, 226, 0.939)
   );
+}
+
+.bodyCategorias{
+  padding-top: 120px;
+  text-align: center;
+}
+.bodyCategorias h2{
+  font-size: 40px;
+  
+}
+.bodyHome{
+  padding-top: 120px;
+  text-align: center;
 }
 
 .carrito {

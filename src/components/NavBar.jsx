@@ -10,29 +10,56 @@ export default function NavBar() {
 
         <ul className="menu">
           <li>
-            <Link to={"/listContainer"} style={{textDecoration : "none", color: "inherit"}}>Home</Link>
+            <Link
+              to={"/home"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              Home
+            </Link>
           </li>
           <li>Novedades</li>
 
           <li>
-            <Link to={"/itemCategoria/1"} style={{textDecoration : "none", color: "inherit"}}> Remeras</Link>
+            <Link
+              to={"/categoria/1"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {" "}
+              Remeras
+            </Link>
           </li>
           <li>
-            <Link to={"/itemCategoria/2"} style={{textDecoration : "none", color: "inherit"}}> Buzos </Link>
+            <Link
+              to={"/categoria/2"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {" "}
+              Buzos{" "}
+            </Link>
           </li>
           <li>
-            <Link to={"/itemCategoria/3"} style={{textDecoration : "none", color: "inherit"}}> Shorts </Link>
+            <Link
+              to={"/categoria/3"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {" "}
+              Shorts{" "}
+            </Link>
           </li>
           <li>
-            <Link to={"/itemCategoria/4"} style={{textDecoration : "none", color: "inherit"}}> Chombas </Link>
+            <Link
+              to={"/categoria/4"}
+              style={{ textDecoration: "none", color: "inherit" }}
+            >
+              {" "}
+              Chombas{" "}
+            </Link>
           </li>
 
           <li>INGRESAR</li>
-
-          <Link to={"/cart"} style={{textDecoration : "none", color: "inherit"}}>
-            {" "}
+          <li>
             <CartWidget />
-          </Link>
+          </li>
         </ul>
       </nav>
     </>

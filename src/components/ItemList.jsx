@@ -1,21 +1,14 @@
 import React from "react";
 import Item from "./Item";
-import Loader from "./Loader";
 
-export default function ItemList({ arrayDeProductos, llegoLaPromesa }) {
+export default function ItemList({ items }) {
   return (
     <>
-      {!llegoLaPromesa ? (
+      {items && (
         <>
-          <Loader />
-        </>
-      ) : (
-        <>
-          <section className="itemListContainer">
-            {arrayDeProductos.map((item, key) => {
-              return <Item item={item} key={key} />;
-            })}
-          </section>
+          {items.map((item, key) => {
+            return <Item item={item} key={key} />;
+          })}
         </>
       )}
     </>
