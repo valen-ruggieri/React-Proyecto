@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import CartItem from "./CartItem";
 import { cartContext } from "./context/Context";
@@ -22,9 +22,9 @@ export default function Cart() {
             })}
           </section>
           <section className="footerCart">
-            <button onClick={() => clearCart()}>
+            <button>
               <Link
-                to={"/listContainer"}
+                to={"/formData"}
                 onClick={() => alert("Compra finalizada con exito")}
                 style={{ textDecoration: "none", color: "inherit" }}
               >

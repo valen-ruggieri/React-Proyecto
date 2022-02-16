@@ -6,6 +6,7 @@ import CartContext from "./components/context/Context";
 import Cart from "./components/Cart";
 import Home from "./components/pages/Home";
 import Categories from "./components/pages/Categories";
+import Form from "./components/Form";
 
 function App() {
   return (
@@ -24,6 +25,9 @@ function App() {
           </Route>
           <Route path="/cart">
             <Cart />
+          </Route>
+          <Route path="/formData">
+            <Form/>
           </Route>
         </Switch>
       </BrowserRouter>

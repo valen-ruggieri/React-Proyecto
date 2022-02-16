@@ -19,8 +19,6 @@ export default function ItemCategoriaContainer({ categoriaId }) {
           return;
         }
 
-        console.log("Hay documentos");
-
         setItems(collection.docs.map((doc) => doc.data()));
       })
       .catch((err) => {

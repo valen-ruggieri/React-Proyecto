@@ -8,7 +8,8 @@ export default function ItemDetailContainer() {
   const { itemId } = useParams();
 
   const [itemDetail, setItemDetail] = useState([]);
-  const [promise, setPromise] = useState(false);
+  const [error, setError] = useState();
+  const [loaded, setLoaded] = useState(false);
 
   useEffect(() => {
     const dataBase = getFirestore();
@@ -20,32 +21,36 @@ export default function ItemDetailContainer() {
       .get()
       .then((collection) => {
         if (collection === 0) {
-          console.log("no hay documentos en esta coleccion");
-          return;
+          return Promise.reject("no hay documentos en esta coleccion");
         }
 
-        console.log("Hay documentos");
-
         setItemDetail(collection.docs.map((doc) => doc.data()));
-        setPromise(true);
+        setLoaded(true);
       })
       .catch((err) => {
-        console.log(err);
+        setError(error);
       });
   }, [itemId]);
 
   return (
     <>
-      {promise && (
+      {error ? (
         <>
-          {itemDetail.map((item, key) => {
-            return <ItemDetail item={item} key={key} />;
-          })}
+          <h1>{error}</h1>
         </>
-      )}
-      {!promise && (
+      ) : (
         <>
-          <Loader />
+          {loaded ? (
+            <>
+              {itemDetail.map((item, key) => {
+                return <ItemDetail item={item} key={key} />;
+              })}
+            </>
+          ) : (
+            <>
+              <Loader />
+            </>
+          )}
         </>
       )}
     </>

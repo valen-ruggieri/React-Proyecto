@@ -35,8 +35,10 @@ export default function Categories() {
   return (
     <>
       <body className="bodyCategorias">
+      <div>
         <h2>{categoryName()}</h2>
         <ItemListContainer categoriaId={categoriaId} />
+        </div>
       </body>
     </>
   );
