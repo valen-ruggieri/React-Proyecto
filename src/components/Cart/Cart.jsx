@@ -17,12 +17,12 @@ export default function Cart() {
             <h2>El total es: ${totalCart()}</h2>
             <button onClick={() => clearCart()}>Vaciar Carrito</button>
             <div className="carrito">
-            {cart.map((element, key) => {
-              return <CartItem key={key} element={element} />;
-            })}
-          </div>
+              {cart.map((element, key) => {
+                return <CartItem key={key} element={element} />;
+              })}
+            </div>
           </section>
-         
+
           <section className="footerCart">
             <button>
               <Link
@@ -39,11 +39,17 @@ export default function Cart() {
         <>
           <br />
           <section className="carritoVacioContainer">
-          <div className="carritoVacio">
-            <h1>Su carrito esta vacio...</h1>
-            <button>
-              <Link to={"/"} style={{textDecoration: "none", color: "inherit" }} > ir a comprar</Link>
-            </button>
+            <div className="carritoVacio">
+              <h1>Su carrito esta vacio...</h1>
+              <button>
+                <Link
+                  to={"/"}
+                  style={{ textDecoration: "none", color: "inherit" }}
+                >
+                  {" "}
+                  ir a comprar
+                </Link>
+              </button>
             </div>
           </section>
         </>

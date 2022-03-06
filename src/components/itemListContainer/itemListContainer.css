@@ -1,109 +1,101 @@
-
 .agregarCarrito {
-    margin-top: 10px;
-    border-radius: 8px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-  }
-  
-  button {
-    border: none;
-    border-radius: 29px;
-    background: linear-gradient(145deg, #656565, #555555);
-    box-shadow: 2px 2px 1px #000000,2px 2px 5px #000000;
-  
-    color: #e0e0e0;
-  
-    margin: 8px 0px 3px 0px;
-    padding: 8px;
-  
-    margin: 5px 0px 5px 0px;
-  }
-  h4 {
-    margin: 0;
-  }
-  h3 {
-    margin: 0;
-  }
-  .containerMasMenos {
+  margin-top: 10px;
+  border-radius: 8px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+button {
+  border: none;
+  border-radius: 29px;
+  background: linear-gradient(145deg, #656565, #555555);
+  box-shadow: 2px 2px 1px #000000, 2px 2px 5px #000000;
+
+  color: #e0e0e0;
+
+  margin: 8px 0px 3px 0px;
+  padding: 8px;
+
+  margin: 5px 0px 5px 0px;
+}
+h4 {
+  margin: 0;
+}
+h3 {
+  margin: 0;
+}
+.containerMasMenos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0px;
+}
+.buttonMasMenos {
+  color: #e0e0e0;
+  margin: 0px 10px 6px 10px;
+  padding: 0px 10px;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 20px;
+}
+
+.main {
+  text-align: center;
+}
+
+.itemList:hover {
+  color: #a3a3a3;
+}
+
+.itemList {
+  border-radius: 40px;
+  background: linear-gradient(145deg, #000000, #181818);
+  box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
+    15px 13px 30px #000000;
+
+  width: 250px;
+  text-align: center;
+  margin: 0px 70px 10px 0px;
+  color: #ffffff;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+}
+
+.imgItem {
+  border-radius: 29px;
+  border: 1px solid rgba(94, 94, 94, 0.392);
+}
+.loading {
+  position: absolute;
+}
+.itemListCategoria {
+  display: flex;
+  flex-wrap: nowrap;
+
+  width: 1200px;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 20px 65px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 740px) {
+  .itemListCategoria {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 4px 0px;
+    flex-direction: column;
+
+    width: 40%;
+    height: 1700px;
+    padding: 0px 0px 0px 0px;
+    margin: 20px 0px 20px 78px;
   }
-  .buttonMasMenos {
-    
-    color: #e0e0e0;
-    margin: 0px 10px 6px 10px;
-    padding: 0px 10px;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 20px;
-  }
-  
-  
-  .main {
-    text-align: center;
-  }
-  
-  .itemList:hover {
-    color: #a3a3a3;
-  }
-  
   .itemList {
     border-radius: 40px;
     background: linear-gradient(145deg, #000000, #181818);
-    box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
-      15px 13px 30px #000000;
-  
+    box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000,
+      0px 13px 0px #000000, 15px 13px 30px #000000;
+
     width: 250px;
     text-align: center;
-    margin: 0px 70px 10px 0px;
+    margin: 50px 50px 10px 0px;
     color: #ffffff;
     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
   }
-  
-  .imgItem {
-    border-radius: 29px;
-    border: 1px solid rgba(94, 94, 94, 0.392);
-  }
-  .loading {
-    position: absolute;
-  }
-  .itemListCategoria {
-    display: flex;
-    flex-wrap: nowrap;
-  
-    width: 1200px;
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 20px 65px;
-  }
-  
-  @media screen and (min-width: 320px) and (max-width: 740px){
-    .itemListCategoria {
-      display: flex;
-      flex-direction: column;
-    
-      width: 40%;
-      height: 1700px;
-      padding: 0px 0px 0px 0px;
-      margin: 20px 0px 20px 78px;
-      
-    }
-    .itemList {
-      border-radius: 40px;
-      background: linear-gradient(145deg, #000000, #181818);
-      box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
-        15px 13px 30px #000000;
-    
-      width: 250px;
-      text-align: center;
-      margin: 50px 50px 10px 0px;
-      color: #ffffff;
-      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
-    }
-
-
-
-    
-  }
+}

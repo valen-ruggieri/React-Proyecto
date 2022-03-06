@@ -1,121 +1,140 @@
-
-.formData {
-    display: block;
-    padding-top: 10px;
-    text-align: center;
-    background-color: rgba(0, 0, 0, 0);
-    width: 500px;
-    margin: 0px 0px 0px 10px;
-  
-    border-radius: 20px;
-    
-  }
-  .formSection button {
-    background-color: black;
-    color: rgb(0, 0, 0);
-    width: 100px;
-    
-  }
-  .buttonVolver {
-    margin: 30px;
-  }
-  
-  .formSection {
-    padding-top: 150px;
-    padding-bottom: 0;
-    margin: 0px 0px 0px 400px;
-    border-radius: 40px;
-    height: 300px;
-    background: linear-gradient(145deg, #000000, #181818);
-    box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
-      15px 13px 30px #000000;
-      width: 500px;
-  }
-  
-  .formSection h1{
-    color: transparent;
-    background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-align: center;
-    font-size: 20px;
-    margin-bottom: 60px;
-  }
-  .formData input {
-    margin: 8px;
-    color: rgb(255, 0, 140);
-    background-color: #181818;
-    border: none;
-    border-radius: 1px;
-    height: 20px;
-    width: 200px;
-  }
-  .formData h3{
-    margin: 0px 0px 10px 0px;
-    font-size: 25px;
-    color: transparent;
-    background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
-    -webkit-background-clip: text;
-    background-clip: text;
-    font-family: "Anton", sans-serif;
-    letter-spacing: 3px;
-  }
-  .submitOk {
-    background-color: rgb(0, 255, 0);
-    border-radius: 20px;
-    display: inline;
-    padding: 6px;
-    color: rgb(255, 255, 255);
-    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
-    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
-    font-size: 19px;
-    
-  }
-  .submitForm{
-  text-align: center;
-  
-  }
-  @media screen and (min-width: 320px) and (max-width: 740px){
-
-    .formSection {
-      padding-top: 50px;
-      padding-bottom: 0;
-      margin: 180px 0px 0px 40px;
-      border-radius: 40px;
-      height: 300px;
-      background: linear-gradient(145deg, #000000, #181818);
-      box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000;
-        
-        width: 300px;
-    }
-    
 .formData {
   display: block;
   padding-top: 10px;
   text-align: center;
   background-color: rgba(0, 0, 0, 0);
-  width: 300px;
+  width: 500px;
   margin: 0px 0px 0px 10px;
 
   border-radius: 20px;
-  
 }
-.formBody{
-  height: 630px;
+.formSection button {
+  background-color: black;
+  color: rgb(0, 0, 0);
+  width: 100px;
+  margin: 17px 0px;
 }
-.submitOk {
- 
-  font-size: 15px;
-  
-}
-.formSection h1{
-  color: transparent;
-    background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
-    -webkit-background-clip: text;
-    background-clip: text;
-  text-align: center;
-  font-size: 15px;
-  margin-bottom: 60px;
+.buttonVolver {
+  margin: 30px;
 }
 
+.formSection {
+  padding-top: 150px;
+  padding-bottom: 0;
+  margin: 0px 0px 0px 400px;
+  border-radius: 40px;
+  height: 300px;
+  background: linear-gradient(145deg, #000000, #181818);
+  box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
+    15px 13px 30px #000000;
+  width: 500px;
+}
+
+.orderUser h1 {
+  color: transparent;
+  background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+.orderUser h2 {
+  color: transparent;
+  background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  font-size: 20px;
+  margin: 20px 70px;
+}
+.formData input {
+  margin: 8px;
+  color: rgb(255, 0, 140);
+  background-color: #181818;
+  border: none;
+  border-radius: 1px;
+  height: 20px;
+  width: 200px;
+}
+.formData h3 {
+  margin: 0px 0px 10px 0px;
+  font-size: 25px;
+  color: transparent;
+  background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+}
+.submitOk {
+  background-color: rgb(0, 255, 0);
+  border-radius: 20px;
+  display: inline;
+  padding: 6px;
+  color: rgb(255, 255, 255);
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.124);
+  font-size: 19px;
+}
+.submitForm {
+  text-align: center;
+}
+@media screen and (min-width: 320px) and (max-width: 740px) {
+  .formSection {
+    padding-top: 50px;
+    padding-bottom: 0;
+    margin: 180px 0px 0px 40px;
+    border-radius: 40px;
+    height: 300px;
+    background: linear-gradient(145deg, #000000, #181818);
+    box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000;
+
+    width: 300px;
   }
+
+  .formData {
+    display: block;
+    padding-top: 10px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0);
+    width: 300px;
+    margin: 0px 0px 0px 10px;
+
+    border-radius: 20px;
+  }
+  .formBody {
+    height: 630px;
+  }
+  .submitOk {
+    font-size: 15px;
+  }
+
+  .orderUser h1 {
+    color: transparent;
+    background-image: linear-gradient(
+      30deg,
+      rgb(240, 0, 0),
+      rgb(255, 108, 211)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 20px;
+  }
+  .orderUser h2 {
+    color: transparent;
+    background-image: linear-gradient(
+      30deg,
+      rgb(240, 0, 0),
+      rgb(255, 108, 211)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    text-align: center;
+    font-size: 15px;
+
+    margin: 30px 30px;
+  }
+}

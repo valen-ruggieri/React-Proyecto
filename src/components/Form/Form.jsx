@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext} from "react";
+import React, { useState, useRef, useContext } from "react";
 import { getFirestore } from "../../firebase/firebase";
 import firebase from "firebase";
 import { cartContext } from "../context/Context";
@@ -7,8 +7,10 @@ import "./form.css";
 
 export default function Form() {
   const [orderId, setOrderId] = useState("");
-  const { cart, totalCart, clearCart } = useContext(cartContext);
+  const { cart, totalCart, clearCart, updateStock, orderUser } =
+    useContext(cartContext);
   const [submitOk, setSubmitOk] = useState(false);
+  const [orderCart, setOrderCart] = useState();
 
   const nameRef = useRef();
   const emailRef = useRef();
@@ -38,6 +40,8 @@ export default function Form() {
       .then(({ id }) => {
         console.log("orden ingresada: " + id);
         setOrderId(id);
+        updateStock(dataBase);
+        setOrderCart(orderUser(myOrder, id));
       })
       .catch((err) => {
         console.log(err);
@@ -70,82 +74,87 @@ export default function Form() {
 
   return (
     <>
-    <body className="formBody">
-      <section className="formSection">
-        {orderId && <h1>Gracias por tu compra tu orden es:   {orderId}</h1>}
+      <body className="formBody">
+        <section className="formSection">
+          {orderId && (
+            <div
+              className="orderUser"
+              dangerouslySetInnerHTML={{ __html: orderCart }}
+            />
+          )}
 
-        {!submitOk ? (
-          <>
-            <div className="formData">
-              <h3>INGRESA TUS DATOS</h3>
-              <input
-                type="text"
-                name="name"
-                ref={nameRef}
-                placeholder="Nombre y apellido"
-                id="nameInput"
-              />
+          {!submitOk ? (
+            <>
+              <div className="formData">
+                <h3>INGRESA TUS DATOS</h3>
+                <input
+                  type="text"
+                  name="name"
+                  ref={nameRef}
+                  placeholder="Nombre y apellido"
+                  id="nameInput"
+                />
 
-              <br />
-              <input
-                type="text"
-                name="email"
-                ref={emailRef}
-                placeholder="Correo"
-                id="emailInput"
-              />
+                <br />
+                <input
+                  type="text"
+                  name="email"
+                  ref={emailRef}
+                  placeholder="Correo"
+                  id="emailInput"
+                />
 
-              <br />
-              <input
-                type="text"
-                name="mobile"
-                ref={mobileRef}
-                placeholder="Numero de telefono"
-                id="mobileInput"
-              />
+                <br />
+                <input
+                  type="text"
+                  name="mobile"
+                  ref={mobileRef}
+                  placeholder="Numero de telefono"
+                  id="mobileInput"
+                />
 
-              <br />
+                <br />
 
-              <input
-                type="text"
-                name="city"
-                ref={cityRef}
-                placeholder="Ciudad"
-                id="cityInput"
-              />
+                <input
+                  type="text"
+                  name="city"
+                  ref={cityRef}
+                  placeholder="Ciudad"
+                  id="cityInput"
+                />
 
-              <br />
-              <input
-                type="text"
-                name="address"
-                ref={addressRef}
-                placeholder="Direccion"
-                id="addressInput"
-              />
+                <br />
+                <input
+                  type="text"
+                  name="address"
+                  ref={addressRef}
+                  placeholder="Direccion"
+                  id="addressInput"
+                />
 
-              <br />
-              <button onClick={() => validarCampos()}>Listo!</button>
-              <br />
-            </div>
-          </>
-        ) : (
-          <>
-            <div className="submitForm">
-              <h3 className="submitOk">Datos enviados correctamente ✅ </h3>
-              <br />
-              <button className="buttonVolver">
-                {" "}
-                <Link
-                  to={"/"}
-                  style={{ textDecoration: "none", color: "inherit" }}
-                >
-                  Volver al home
-                </Link>
-              </button>
-            </div>
-          </>
-        )}
-      </section>
+                <br />
+                <button onClick={() => validarCampos()}>Listo!</button>
+                <br />
+              </div>
+            </>
+          ) : (
+            <>
+              <div className="submitForm">
+                <h3 className="submitOk">Datos enviados correctamente ✅ </h3>
+                <br />
+                <button className="buttonVolver">
+                  {" "}
+                  <Link
+                    to={"/"}
+                    style={{ textDecoration: "none", color: "inherit" }}
+                  >
+                    Volver al home
+                  </Link>
+                </button>
+              </div>
+            </>
+          )}
+        </section>
       </body>
     </>
   );

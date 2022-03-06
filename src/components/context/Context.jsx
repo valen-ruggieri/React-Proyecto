@@ -1,4 +1,5 @@
 import React, { createContext, useState } from "react";
+import firebase from "firebase";
 
 export const cartContext = createContext();
 
@@ -23,8 +24,6 @@ export default function Context({ children }) {
     const cartFilter = cart.filter((element) => element.item.id !== id);
 
     setCart(cartFilter);
-    
-   
   }
 
   function clearCart() {
@@ -32,24 +31,41 @@ export default function Context({ children }) {
   }
 
   function countCartItems() {
-  const countCartItems = cart.reduce((total,item)=>{
-    return total + item.cant 
-  },0);
- 
+    const countCartItems = cart.reduce((total, item) => {
+      return total + item.cant;
+    }, 0);
+
     if (countCartItems > 0) {
       return countCartItems;
     }
   }
 
-  function totalCart(){
-    const index  = cart.map((element) => element.cant * element.item.precio);
+  function totalCart() {
+    const index = cart.map((element) => element.cant * element.item.precio);
 
-    const totalCartPrice = index.reduce((a,b)=>{
+    const totalCartPrice = index.reduce((a, b) => {
       return a + b;
-    },0)
+    }, 0);
 
     return totalCartPrice;
+  }
+  const updateStock = (dataBase) => {
+    cart.map(function (e) {
+      let newStock = e.item.stock - e.cant;
+      let idItem = e.item.idxFR;
+      const item = dataBase.collection("items").doc(idItem);
+      item.update({ stock: newStock });
+      return console.log(newStock);
+    });
+  };
 
+  function orderUser(myOrderDat, orderId) {
+    const name = myOrderDat.buyer.name;
+    const email = myOrderDat.buyer.email;
+    const order = `<h1>Gracias por su compra ${name}!!</h1><h2>Su codigo de orden es: ${orderId}</h2> 
+   <h2>En momentos recibira el comprobante en su correo ${email} </h2> `;
+
+    return order;
   }
 
   return (
@@ -62,7 +78,9 @@ export default function Context({ children }) {
           deleteItemCart,
           clearCart,
           countCartItems,
-          totalCart
+          totalCart,
+          updateStock,
+          orderUser,
         }}
       >
         {children}
