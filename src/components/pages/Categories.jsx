@@ -1,5 +1,6 @@
 import { useParams } from "react-router-dom";
-import ItemListContainer from "../ItemListContainer";
+import ItemListContainer from "../itemListContainer/ItemListContainer";
+import "./pages.css";
 
 export default function Categories() {
   const { categoriaId } = useParams();
@@ -9,19 +10,19 @@ export default function Categories() {
 
     switch (categoriaId) {
       case "1":
-        categoryName = "Remeras";
+        categoryName = "REMERAS";
         break;
 
       case "2":
-        categoryName = "Buzos";
+        categoryName = "BUZOS";
         break;
 
       case "3":
-        categoryName = "Short de baño";
+        categoryName = "SHORTS DE BAÑO";
         break;
 
       case "4":
-        categoryName = "Chombas de pique";
+        categoryName = "CHOMBAS DE PIQUE";
         break;
 
       default:
@@ -35,10 +36,10 @@ export default function Categories() {
   return (
     <>
       <body className="bodyCategorias">
-      <div>
-        <h2>{categoryName()}</h2>
-        <ItemListContainer categoriaId={categoriaId} />
-        </div>
+        <ItemListContainer
+          categoriaId={categoriaId}
+          categoryName={categoryName()}
+        />
       </body>
     </>
   );

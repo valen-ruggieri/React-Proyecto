@@ -1,14 +1,15 @@
-import React, { useContext, useEffect, useState } from "react";
+import React, { useContext, useState } from "react";
 import ContStock from "./ContStock";
 import { Link } from "react-router-dom";
-import { cartContext } from "./context/Context";
+import { cartContext } from "../context/Context";
+import "./itemListContainer.css";
 
 import Loader from "./Loader";
 
-export default function ItemCategoria({ item }) {
+export default function ItemCategoria({ item , promise }) {
   const { addToCart } = useContext(cartContext);
   const [addItem, setAddItem] = useState(false);
-  const [promise, setPromise] = useState(false);
+  
 
   function onAdd(cant) {
     alert(`${item.nombre} añadida al carrito + ${cant}`);
@@ -16,11 +17,7 @@ export default function ItemCategoria({ item }) {
     setAddItem(true);
   }
 
-  useEffect(() => {
-    setTimeout(() => {
-      setPromise(true);
-    }, 2000);
-  }, []);
+
 
   return (
     <>
@@ -28,8 +25,8 @@ export default function ItemCategoria({ item }) {
         <article className="itemList">
           <Link to={`/itemDetail/${item.id}`}>
             <img
-              width={"260px"}
-              height={"260px"}
+              width={"250px"}
+              height={"200px"}
               className="imgItem"
               src={item.img}
               alt={item.nombre}

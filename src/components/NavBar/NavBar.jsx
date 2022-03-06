@@ -1,6 +1,7 @@
 import React from "react";
-import CartWidget from "./CartWidget";
+import CartWidget from "../Cart/CartWidget";
 import { Link } from "react-router-dom";
+import "./navBar.css";
 
 export default function NavBar() {
   return (
@@ -11,7 +12,7 @@ export default function NavBar() {
         <ul className="menu">
           <li>
             <Link
-              to={"/home"}
+              to={"/"}
               style={{ textDecoration: "none", color: "inherit" }}
             >
               Home

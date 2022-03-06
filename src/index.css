@@ -1,9 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 body {
   margin: 0;
-  font-family: 'Mandali', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(./img/layered-peaks-haikei\ \(5\).svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 60%;
+
+ 
+ 
 }
+@media screen and (min-width: 741px) and (max-width: 1200px){
+  body{
+    display: none;
+  }
+}
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

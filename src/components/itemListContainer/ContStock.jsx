@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./contStock.css";
 
 export default function ContStock({ tope, onAdd}) {
   const [cantidad, setCantidad] = useState(0);

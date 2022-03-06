@@ -1,0 +1,22 @@
+
+.contador {
+    width: 300px;
+    border-radius: 20px;
+    box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    background-color: yellow;
+  }
+  
+  .botonDeMenos {
+    margin-right: 10px;
+    width: 35px;
+    border-radius: 4px;
+  }
+  
+  .botonDeMas {
+    margin-left: 10px;
+    width: 35px;
+    border-radius: 4px;
+  }

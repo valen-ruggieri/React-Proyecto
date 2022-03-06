@@ -1,7 +1,8 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
-import CartItem from "./CartItem";
-import { cartContext } from "./context/Context";
+import CartItem from "../Cart/CartItem";
+import "./cart.css";
+import { cartContext } from "../context/Context";
 
 export default function Cart() {
   const { cart, clearCart, countCartItems, totalCart } =
@@ -13,14 +14,15 @@ export default function Cart() {
         <>
           <section className="carritoContainer">
             <h1>Tienes {countCartItems()} items en el carrito</h1>
-            <h2>El total es: {totalCart()}</h2>
+            <h2>El total es: ${totalCart()}</h2>
             <button onClick={() => clearCart()}>Vaciar Carrito</button>
-          </section>
-          <section className="carrito">
+            <div className="carrito">
             {cart.map((element, key) => {
               return <CartItem key={key} element={element} />;
             })}
+          </div>
           </section>
+         
           <section className="footerCart">
             <button>
               <Link
@@ -36,11 +38,13 @@ export default function Cart() {
       ) : (
         <>
           <br />
-          <section className="carritoContainer">
-            <h1>Su carrito esta vacio..</h1>
+          <section className="carritoVacioContainer">
+          <div className="carritoVacio">
+            <h1>Su carrito esta vacio...</h1>
             <button>
-              <Link to={"/home"}> ir a comprar</Link>
+              <Link to={"/"} style={{textDecoration: "none", color: "inherit" }} > ir a comprar</Link>
             </button>
+            </div>
           </section>
         </>
       )}

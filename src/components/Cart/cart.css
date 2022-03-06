@@ -1,0 +1,146 @@
+
+
+.carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  .carritoContainer {
+    padding-top: 120px;
+    text-align: center;
+    color: #e0e0e0;
+  }
+  .carritoContainer h1{
+    color: transparent;
+    background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+    -webkit-background-clip: text;
+    background-clip: text;
+  
+  }  
+  .carritoContainer h2{
+    color: transparent;
+    background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+ .carritoVacioContainer{
+  height: 400px;
+  padding-top: 190px;
+  text-align: center;
+ }
+
+ .carritoVacioContainer h1{
+  color: transparent;
+  background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.carritoVacio{
+  border-radius: 40px;
+      background: linear-gradient(145deg, #000000, #181818);
+      box-shadow: 10px 0px 0px #000000, 10px 13px 0px #000000, 0px 10px 0px #000000,
+        15px 13px 30px #000000;
+        margin: 0px 0px 0px 470px;
+        padding: 5px;
+        width: 400px;
+
+}
+  
+  .itemCart {
+    border-radius: 40px;
+    background: linear-gradient(145deg, #000000, #181818);
+    box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
+      15px 13px 30px #000000;
+  
+    width: 200px;
+    text-align: center;
+    margin: 10px 70px 30px 0px;
+    color: #ffffff;
+    text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+  }
+  .imgCart {
+    border-radius: 20px;
+  }
+  .iconCart {
+    margin: 8px 0px 0px 2px;
+    background-color: yellow;
+    border-radius: 50px;
+    padding: 0px 4px;
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-weight: 1000;
+    position: absolute;
+  }
+  .cartWidget{
+    width: 20px;
+  }
+  .footerCart {
+    text-align: center;
+    margin: 20px;
+  }
+  .footerCart button {
+    color: white;
+    background-color: black;
+  }
+  @media screen and (min-width: 320px) and (max-width: 740px){
+    .iconCart {
+      
+      background-color: yellow;
+      border-radius: 80px;
+      padding: 0px 3px;
+      color: rgb(0, 0, 0);
+      font-size: 12px;
+      font-weight: 1000;
+      width: 5px;
+      
+    }
+    .cartWidget{
+      width:20px;
+    }
+    .carritoContainer {
+      padding-top: 90px;
+      text-align: center;
+      color: #e0e0e0;
+      height: 100%;
+    }
+    .carritoVacioContainer{
+      height: 700px;
+      padding-top: 90px;
+      text-align: center;
+      
+  
+    }
+
+    .carritoVacio{
+      border-radius: 40px;
+      background: linear-gradient(145deg, #000000, #181818);
+      box-shadow: 10px 0px 0px #000000, 10px 13px 0px #000000, 0px 10px 0px #000000,
+        15px 13px 30px #000000;
+        margin: 20px;
+        padding: 5px;
+    }
+   
+    .carrito {
+      display: flex;
+      
+      flex-direction: column;
+      margin-top: 50px;
+    }
+    .itemCart {
+      border-radius: 40px;
+      background: linear-gradient(145deg, #000000, #181818);
+      box-shadow: 14px 0px 0px #000000, 15px 13px 0px #000000, 0px 13px 0px #000000,
+        15px 13px 30px #000000;
+    
+      width: 200px;
+      text-align: center;
+      margin: 0px 0px 50px 0px;
+      color: #ffffff;
+      text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.432);
+    }
+    .footerCart {
+      text-align: center;
+      margin: 0px 0px 100px 0px;
+    }
+  }

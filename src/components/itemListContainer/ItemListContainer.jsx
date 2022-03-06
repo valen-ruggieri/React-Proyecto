@@ -1,9 +1,12 @@
 import React, { useEffect, useState } from "react";
 import ItemList from "./ItemList";
-import { getFirestore } from "../firebase/firebase";
+import { getFirestore } from "../../firebase/firebase";
+import "./itemListContainer.css";
 
-export default function ItemCategoriaContainer({ categoriaId }) {
+export default function ItemCategoriaContainer({ categoriaId, categoryName }) {
   const [items, setItems] = useState([]);
+  const [promise, setPromise] = useState(false);
+  const [promiseH2, setPromiseH2] = useState(false);
 
   useEffect(() => {
     const dataBase = getFirestore();
@@ -26,10 +29,20 @@ export default function ItemCategoriaContainer({ categoriaId }) {
       });
   }, [categoriaId]);
 
+  useEffect(() => {
+    setTimeout(() => {
+      setPromise(true);
+    }, 2000);
+    setTimeout(() => {
+      setPromiseH2(true);
+    }, 1000);
+  });
+
   return (
     <>
+      <>{promiseH2 && <h2 className="h2Category"> {categoryName} </h2>}</>
       <section className="itemListCategoria">
-        <ItemList items={items} />
+        <ItemList items={items} promise={promise} />
       </section>
     </>
   );

@@ -1,5 +1,6 @@
 import React from "react";
-import Loader from "./Loader";
+import "./itemDetail.css";
+
 
 export default function productoDetail({ item }) {
   return (

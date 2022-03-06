@@ -1,0 +1,87 @@
+.navBar {
+  display: inline-block;
+
+  width: 1370px;
+  position: fixed;
+
+  background: linear-gradient(145deg, #747474, #000000);
+  box-shadow: 5px 5px 16px #000000, -5px -5px 6px #ffffff;
+}
+.tituloPrinc {
+  text-align: center;
+  font-size: 34px;
+  background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: "Anton", sans-serif;
+  letter-spacing: 3px;
+  margin: 10px;
+  color: transparent;
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  color: transparent;
+  justify-content: center;
+  margin: 0;
+  box-shadow: 5px 5px 26px #000000;
+  background-image: linear-gradient(30deg, rgb(240, 0, 0), rgb(255, 108, 211));
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+.menu li {
+  margin: 10px 0px 0px 25px;
+  font-size: 20px;
+
+  padding: 0px 20px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 740px) {
+  .navBar {
+    display: block;
+    position: relative;
+    width: 100%;
+
+    background: linear-gradient(145deg, #747474, #000000);
+    box-shadow: 5px 5px 16px #000000, -5px -5px 6px #ffffff;
+  }
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    color: transparent;
+
+    margin: 0;
+    box-shadow: 5px 5px 26px #000000;
+    background-image: linear-gradient(
+      30deg,
+      rgb(240, 0, 0),
+      rgb(255, 108, 211)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+  }
+  .menu li {
+    margin: 10px 0px 0px 0px;
+    font-size: 15px;
+
+    padding: 0px 10px 0px 10px;
+  }
+  .tituloPrinc {
+    text-align: center;
+    font-size: 30px;
+    background-image: linear-gradient(
+      30deg,
+      rgb(240, 0, 0),
+      rgb(255, 108, 211)
+    );
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-family: "Anton", sans-serif;
+    letter-spacing: 3px;
+    margin: 0px;
+
+    color: transparent;
+  }
+}
